@@ -11,13 +11,13 @@
 
                 marker.addEventListener('markerFound', function () {
                     this.vid.play();
-                    alert("play");
+                 
                 }.bind(this));
     
 		marker.addEventListener('markerLost', function() {
 			this.vid.pause();
             this.vid.currentTime = 0;
-            alert("pause");
+      
 		}.bind(this));
             }
         });
@@ -72,7 +72,7 @@
                 rotation='-90 0 0'
                 width='300'
                 height='175'
-                
+                material='shader: chromakey; color: 0.1 0.9 0.2'
                 >
             </a-video>
         </a-nft>
