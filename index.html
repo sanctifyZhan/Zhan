@@ -11,11 +11,13 @@
 
                 marker.addEventListener('markerFound', function () {
                     this.vid.play();
+                    alert("play");
                 }.bind(this));
     
 		marker.addEventListener('markerLost', function() {
 			this.vid.pause();
-			this.vid.currentTime = 0;
+            this.vid.currentTime = 0;
+            alert("pause");
 		}.bind(this));
             }
         });
